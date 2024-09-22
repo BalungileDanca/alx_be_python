@@ -9,7 +9,7 @@ match priority:
         p= "is the medium task"
     case "low":
         p="is the low task." 
-if time_bond == "yes":
+if time_bond == 'yes':
     print(f"Reminder: '{task}' {p} that requires immediate attention today!")
 elif time_bond == "no":
-    print(f"Reminder: '{task}' {p} Consider completing it when you have free time.")
+    print(f"Note: '{task}' {p} Consider completing it when you have free time.")
