@@ -3,16 +3,14 @@ def perform_operation(num1,num2,operation):
         o = num1 + num2
         print(o)
     elif operation == 'subtract':
-        o = num1 - num2
-        print(o)
+        return num1 - num2
     elif operation == 'multiply':
-        o = num1 * num2
-        print(o)
+        return num1 * num2
     elif operation == 'divide':
         if num2 == 0:
             print("Cannot divide by zero.")
         else:
-            o = num1/num2
+            return num1/num2
             print(o)
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
