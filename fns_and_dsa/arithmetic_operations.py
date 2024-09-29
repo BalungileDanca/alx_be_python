@@ -14,5 +14,5 @@ def perform_operation(num1,num2,operation):
         else:
             o = num1 / num2
             print(o)
-print(perform_operation(10,0,'divide'))
+
 
