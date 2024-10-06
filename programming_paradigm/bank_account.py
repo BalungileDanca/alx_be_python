@@ -4,13 +4,13 @@ class BankAccount:
         
     def deposit(self, Amount):
         Amount = float(input("Amount you want to deposit: "))
-        Amount += self.Account_balance
+        self.Account_balance += Amount
         print(f"Deposit: {Amount}")
     def withdraw(self, Amount):
-        Amount = float(input("Amount you want to withdraw: "))
-        Amount -= self.Account_balance
+        self.Amount = float(input("Amount you want to withdraw: "))
+        self.Account_balance -= Amount
 
-        if Amount <= self.Account_balance:
+        if self.Account_balance >= Amount:
             print(f"withdraw: {Amount}")
         else:
             print("Insufficient funds.")
