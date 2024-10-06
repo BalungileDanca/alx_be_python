@@ -14,7 +14,3 @@ class BankAccount:
             print("Insufficient funds.")
     def display_balance(self):
         print(f"Current Balance: {self.Account_balance}")
-
-obj = BankAccount(20)
-obj.deposit()
-obj.withdraw()
