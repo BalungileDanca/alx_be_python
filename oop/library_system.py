@@ -22,10 +22,6 @@ class Library:
     def add_book(self, book):
         self.books.append(book)
     def list_books(self):
-        if not self.books:
-            print("No books in the library.")
-        else:
-            print("Books in the library:")
             for book in self.books:
                 print(book)
 
